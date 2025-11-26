@@ -1,0 +1,54 @@
+{
+  "name": "easy-filters",
+  "version": "1.0.0",
+  "description": "Dynamic filter generation and query building for Drizzle ORM with Zod validation",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts --clean",
+    "prepublishOnly": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "drizzle",
+    "drizzle-orm",
+    "filter",
+    "query",
+    "zod",
+    "typescript",
+    "orm",
+    "database",
+    "dynamic-filters"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "peerDependencies": {
+    "drizzle-orm": ">=0.29.0",
+    "zod": ">=3.22.0"
+  },
+  "devDependencies": {
+    "drizzle-orm": "^0.29.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.3.0",
+    "zod": "^3.22.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/easy-filters.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/easy-filters/issues"
+  },
+  "homepage": "https://github.com/yourusername/easy-filters#readme"
+}

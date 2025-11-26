@@ -1,6 +1,6 @@
 {
   "name": "easy-filters",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Dynamic filter generation and query building for Drizzle ORM with Zod validation",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
@@ -12,11 +12,11 @@
       "types": "./dist/index.d.ts"
     }
   },
-"files": [
-  "dist",
-  "src",
-  "README.md"
-],
+  "files": [
+    "dist",
+    "src",
+    "README.md"
+  ],
   "scripts": {
     "build": "tsup src/index.ts --format cjs,esm --dts --clean",
     "prepublishOnly": "npm run build",
@@ -49,5 +49,4 @@
     "type": "git",
     "url": "https://github.com/Ahmedsam199/easy-filters"
   }
-
 }
